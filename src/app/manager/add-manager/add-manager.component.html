@@ -1,0 +1,69 @@
+<div class="main-content">
+  <div class="card">
+    <div class="card-header card-header-danger">
+      <h4 class="card-title">Ajouter un manager</h4>
+    </div>
+    <div class="card-body">
+      <form [formGroup]="managerForm" (ngSubmit)="onSubmit()">
+        <mat-form-field formGroupName="entreprise">
+          <input matInput type="text" placeholder="Nom de l'entreprise" formControlName="nom"/>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput type="text" placeholder="Nom" formControlName="nom"/>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+          <input matInput type="text" placeholder="Prenom" formControlName="prenom"/>
+        </mat-form-field>
+        <br>
+        <br>
+        <mat-form-field>
+          <input matInput type="text" placeholder="Email" formControlName="email"/>
+        </mat-form-field>
+        <br>
+        <br>
+        <mat-form-field>
+          <input matInput type="password" placeholder="Password" formControlName="password"/>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput type="text" placeholder="Fonction" formControlName="fonction"/>
+        </mat-form-field>
+        <br>
+        <mat-accordion>
+          <mat-expansion-panel hideToggle formGroupName="adresse">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Adresse
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-form-field>
+              <input matInput type="text" placeholder="Boite postale" formControlName="boitePostal"/>
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput type="text" placeholder="Email" formControlName="mail"/>
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput type="text" placeholder="Pays" formControlName="pays"/>
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput type="text" placeholder="Ville" formControlName="ville"/>
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput type="text" placeholder="Site web" formControlName="siteWeb"/>
+            </mat-form-field>
+            <mat-form-field>
+              <input matInput type="text" placeholder="Téléphone" formControlName="telephone"/>
+            </mat-form-field>
+          </mat-expansion-panel>
+
+        </mat-accordion>
+        <br>
+
+        <button type="submit" class="btn btn-success">
+          Valider
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
