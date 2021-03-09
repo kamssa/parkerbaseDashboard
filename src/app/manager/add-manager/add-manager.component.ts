@@ -41,7 +41,6 @@ export class AddManagerComponent implements OnInit {
        }),
        adresse : this.fb.group({
          boitePostal: '',
-         mail:'',
          pays: '',
          ville: '',
          siteWeb: '',
