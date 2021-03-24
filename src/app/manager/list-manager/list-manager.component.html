@@ -8,11 +8,11 @@
           </div>
           <button mat-raised-button (click)="openDialog()">Ajouter un manager</button>
           <div class="row">
-           <!-- <div class="col-md-6">
+            <div class="col-md-6">
               <mat-form-field >
                 <input matInput (keyup)="applyFilter($event)"  placeholder="Recherche..." #input>
               </mat-form-field>
-            </div>-->
+            </div>
           </div>
           <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
             <ng-container matColumnDef="entreprise">
